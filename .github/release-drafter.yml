@@ -22,7 +22,9 @@ categories:
     label: '8-automation-helpers'
   - title: 'Security subsystem'
     label: '9-security'
-
+exclude-labels:
+  - 'skip-changelog'
+  
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 template: |
   ## Changes in this release
