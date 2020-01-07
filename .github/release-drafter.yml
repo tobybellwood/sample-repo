@@ -1,19 +1,30 @@
-name-template: 'v$NEXT_PATCH_VERSION 🌈'
-tag-template: 'v$NEXT_PATCH_VERSION'
+name-template: 'v$NEXT_MINOR_VERSION'
+tag-template: 'v$NEXT_MINOR_VERSION'
 categories:
-  - title: '🚀 Features'
+  - title: 'Vanilla kubernetes support'
     labels:
-      - 'feature'
-      - 'enhancement'
-  - title: '🐛 Bug Fixes'
-    labels:
-      - 'fix'
-      - 'bugfix'
-      - 'bug'
-  - title: '🧰 Maintenance'
-    label: 'chore'
+      - '0-kubernetes'
+  - title: 'API & Authentication subsystem'
+    label: '1-api-auth'
+  - title: 'Build & Deploy subsystem'
+    label: '2-build-deploy'
+  - title: 'Logging & Reporting subsystem'
+    label: '3-logging-reporting'
+  - title: 'Metrics & Alerting subsytem'
+    label: '4-metrics-alerting'
+  - title: 'Operators & Provisioning subsystem'
+    label: '5-operators-provision'
+  - title: 'Base Images & Testing subsystem'
+    label: '6-images-testing'
+  - title: 'Documentation & Examples / DX subsystem'
+    label: '7-documentation-examples'
+  - title: 'Automation, Services & Helpers subsystem'
+    label: '8-automation-helpers'
+  - title: 'Security subsystem'
+    label: '9-security'
+
 change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
 template: |
-  ## Changes
+  ## Changes in this release
 
   $CHANGES
